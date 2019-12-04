@@ -1,0 +1,17 @@
+title: 'Mimecast mobile '
+tagline: A brand new course on Learning Lab
+description: 'Control mobile messages '
+template:
+  repo: mimecast-mobile-template
+  name: mimecast-mobile
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
